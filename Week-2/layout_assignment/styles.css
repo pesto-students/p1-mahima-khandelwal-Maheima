@@ -28,15 +28,6 @@ section{
 
 }
 
-main{
-}
-
-article{
-    display: flex;
-    flex-direction: column;   
-}
-
-
 .details{
     margin: 3% 0;
 }
@@ -101,6 +92,11 @@ fieldset{
     margin: 3% 0;
 }
 
+
+article{
+    display: flex;
+    flex-direction: column;   
+}
 
 
 @media only screen and (min-width: 786px) {
