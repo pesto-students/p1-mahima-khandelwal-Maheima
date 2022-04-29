@@ -1,18 +1,26 @@
 function createStack() {
+  let items= [];
   return {
     
-    items: [],
     push(item) {
-      this.items.push(item);
+      items.push(item);
+      console.log(items);
+
     },
     pop() {
-      return this.items.pop();
+      return items.pop();
     },
   };
 }
 
-const stack = createStack();
+const stack = createStack(); //creates an instance of stack
 stack.push(10);
 stack.push(5);
 stack.pop(); 
 console.log(stack.items);
+
+
+// stack.items = [34,45,67];
+// stack.some = [1, 5,0]
+// console.log(stack.items)
+// console.log(stack)
