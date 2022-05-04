@@ -9,14 +9,18 @@ Person.prototype.initialize = function (name, age) {
 function Teacher() {
 }
 
-Teacher.prototype.teach = function (subject, name,age) {
-    const t = Person.call(name, age);
+
+
+Teacher.prototype.teach = function (name,age) {
+    Person(name, age);
     
-    console.log(subject);
+    console.log(`${this.name} is now teaching ${name}`);
 
 }
 
 Object.setPrototypeOf(Teacher.prototype, Person.prototype)
+
+
 
 var him = new Teacher();
 
