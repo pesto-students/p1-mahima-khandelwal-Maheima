@@ -9,6 +9,7 @@ Person.prototype.initialize = function (name, age) {
 function Teacher() {
 }
 
+Object.setPrototypeOf(Teacher.prototype, Person.prototype)
 
 
 Teacher.prototype.teach = function (name,age) {
@@ -18,7 +19,6 @@ Teacher.prototype.teach = function (name,age) {
 
 }
 
-Object.setPrototypeOf(Teacher.prototype, Person.prototype)
 
 
 
