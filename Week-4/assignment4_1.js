@@ -1,5 +1,5 @@
 const getNumber = () =>{
-    new Promise((res,rej) => {
+    return new Promise((res,rej) => {
         const randomNum = parseInt(Math.random() * 100 , 10);
         setTimeout(() => {
             if (randomNum % 5 === 0) {
@@ -11,5 +11,5 @@ const getNumber = () =>{
     })
 }
 
-const x = getNumber()
-x.then()
+
+getNumber().then(val => console.log(val))
